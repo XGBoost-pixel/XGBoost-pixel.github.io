@@ -1,0 +1,12 @@
+@charset "utf-8";
+ul{margin:0;padding: 0;list-style: none;}
+.table{display: table;border-collapse: collapse;border: 1px solid #ccc;text-align: center;}
+h3{display: table-caption;text-align: center;}
+.table-column-group{display: table-column-group;}
+.table-column-group div{display: table-column;width: 100px;}
+.table-row-group{display: table-row-group;}
+.table-row{display: table-row;}
+.table-row-group.table-row:hover{background: yellow;}
+.table-row li{display: table-cell;border: 1px solid #ccc;}
+.table-header-group{display: table-header-group;background: yellow;font-weight: bold;}
+.table-footer-group{display: table-footer-group;}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+body{padding: 0px;margin: 0px;color: #333;font-size: 12px;
+    background: #180153 url(images/backgroud2.jpg) no-repeat fixed center 100%;}
+.text{font-size: xx-large;color: salmon;}    
+.container{margin: 20px 50px 0 200px;}

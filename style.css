@@ -1,0 +1,26 @@
+@charset "utf-8";
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    color: blue;
+}
+.p1 {
+    color: red;
+}
+#p2 {
+    color: green;
+}
+body em {
+    color: yellow;
+}
+p>strong {
+    color: gray;
+}
+h1~h2 {
+    color: red;
+}
+h2[title="demo"] {
+    background-color: yellow;
+}

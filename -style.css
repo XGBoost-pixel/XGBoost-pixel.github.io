@@ -1,0 +1,17 @@
+@charset "utf-8";
+body{padding: 0px;margin: 0px;color: #333;font-size: 12px;
+    background: #180153 url(images/bkg3.jpg) no-repeat fixed center 100%;}
+.container{width: 100%;margin: 0px auto;overflow: hidden;position: relative;}
+.inner{margin-left: 20%;margin-right: 20%;margin-top: 5%;
+    background: -ms-linear-gradient(left,#00829a,#10b7d4);
+    background: -moz-linear-gradient(left,#00829a,#10b7d4);
+    background: -webkit-linear-gradient(left,#00829a,#10b7d4);}
+.text{ background: -ms-linear-gradient(left,#10b7d4,#6eecf7);
+    background: -moz-linear-gradient(left,#10b7d4,#6eecf7);
+    background: -webkit-linear-gradient(left,#10b7d4,#6eecf7);
+      font-size: large;
+      font-weight: 600;
+      padding: 3px 3px 3px 0;
+}
+img{width: 95%;}
+h4{font-weight: 1000;}

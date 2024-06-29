@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教材选购网（伪）</title>
+    <script language="javascript">
+        function createOrder(){
+            var num=0;
+            var textbooks=document.forms[0].textbook;
+            var txtTitles="";
+            var textIsbns="";
+            for(i=0;i<textbooks.length;i++){
+                if(textbooks[i].checked){
+                    txtTitles=txtTitles+"《"+textbooks[i].nextSibling.nodeValue+"》\r\n";
+                    textIsbns=textIsbns+textbooks[i].value+",";
+                    num++;
+                }
+            }
+            if(num>0){
+                alert("您订购的教材有"+num+"本，分别是：\r\n"+txtTitles);
+            }else{
+                alert("您尚未选择任何教材！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>教材选购单</h2>
+        <h3>您想选择哪几本教材？</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="textbook" value="9787113086756">计算机网络技术及应用<br></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="textbook" value="9787113023456">网页设计与制作<br></td>
+                </tr>
+            </table>
+            <input type="button" onclick="createOrder()" value="发送教材选购单">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+h1{clear:both;padding-top:10px;font-size: 16px;font-family: Arial;}
+.test{zoom:1;width: 700px;margin: 0;padding: 0;list-style: none;}
+.test li{float: left;margin: 20px 30px 0 0;border: 1px solid#000;}
+.test li p{width: 300px;height: 100px;margin: 0;background: #ddd;}
+.test .matrix{transform: matrix(0,1,1,1,10,10);}
+.test .translate p{transform: translate(10px,10px);}
+.test .translate2 p{transform: translate(-10px,-10px);}
+.test .translateX p{transform: translateX(20px);}
+.test .translate3 p{transform: translate(20px);}
+.test .translateY p{transform: translate(10px);}
+.test .translate4 p{transform: translate(0,10px);}
+.test .rotate{transform: rotate(-5deg);}
+.test .rotate2{transform: rotate(5deg);}
+.test .scale{transform: scale(.8);}
+.test .scale2{transform: scale(1.2);}
+.test .skew{transform: skew(-5deg);}
+.test .skew2{transform: skew(-5deg,-5deg);}

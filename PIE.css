@@ -1,0 +1,12 @@
+@charset "utf-8";
+body{padding: 0px;margin: 0px;color: #333;font-size: 12px;
+    background: #180153 url(images/backgroud2.jpg) no-repeat fixed center 100%;}
+div.ul{margin: 0px 8px 0px 0px;padding: 0px;float: left;width: 700px;}
+div.ul.li{font-size: xx-large;margin-top: 20%;
+    background: -ms-linear-gradient(left,#d24726,#de562e);
+    background: -moz-linear-gradient(left,#d24726,#de562e);
+    background: -webkit-linear-gradient(left,#d24726,#de562e);
+    border:2px solid #fff;
+    width: 600px;
+    margin-left: 20%;
+}

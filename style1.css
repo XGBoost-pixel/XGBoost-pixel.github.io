@@ -1,0 +1,7 @@
+@charset "utf-8";
+header{background:#0099CC;}
+footer{padding: 10px 0; background: #CCCCFF; clear:both; text-align: right;}
+h1,h2,h3,h4,h5,h6,p{margin-top: 0; padding-right: 15px; padding-left: 15px; }
+header,section,footer,aside,nav,article,figure{display:block;}
+aside#leftside{float:left; width: 100px;background: #eadcae;padding: bottom 10px; }
+section#content{float: left;width: 590px;}

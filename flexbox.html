@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动盒</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <style></style>
+    <script language="javascript">
+        function testparams(){
+            var params="";
+            for(var i=0;i<arguments.length;i++){
+                params=params+""+arguments[i];
+            }
+            alert(params)
+        }
+        var pi=3.1415926;
+        function compute(radius){
+            var area=0;
+            area=pi*radius*radius;
+            return area;
+        }
+        function show(){
+            var radius=document.getElementById('radius').value;
+            var area=compute(radius);
+            document.getElementById('area').value=area;
+            return;
+        }
+        function searchFirst(){
+            var str=document.getElementById('str').value;
+            var ch=document.getElementById('ch').value.charAt(0);
+            var pos=-1;
+            for(var i=0;i<str.length;i++){
+                if(str.charAt(i)==ch){
+                    pos=i;
+                    break;
+                }
+            }
+            if(pos>=0){
+                document.getElementById('fp').value=pos+1;
+            }else{
+                document.getElementById('fp').value="没有发现！";
+            }
+            return;
+        }
+        function total(){
+            var str=document.getElementById('str').value;
+            var ch=document.getElementById('ch').value.charAt(0);
+            var amount=0;
+            for(var i=0;i<str.length;i++){
+                if(str.charAt(i)!=ch){
+                    continue;
+                }
+                amount++;
+            }
+            document.getElementById('tp').value=amount;
+        }
+    </script>
+</head>
+<body>
+    <header>页眉</header>
+    <section>
+        <article>
+            <p><p1>高级计算器</p1>    <strong>低级计算器</strong></p>
+            <form>
+                <label>输入半径:</label><input type="text" name="radius" id="radius">
+                <input type="button" value="计算！" onclick="show()"><br>
+                <label>圆的面积：</label><input type="text" name="area" id="area"readonly>
+            </form><br><br>
+            <p>---------------------------------------------------------------------------------</p>
+            <br><br>
+            <form>
+                请输入字符串：<input type="text" name="str" id="str"><br>
+                输入查找字符：<input type="text" name="ch" id="ch"><br>
+                第一次出现在：<input type="text" name="fp" id="fp" readonly>
+                <input type="button" value="开始查找！" onclick="searchFirst()"><br>
+                字符总共出现：<input type="text" name="tp" id="tp" readonly>
+                <input type="button" value="开始统计！" onclick="total()">
+            </form>
+        </article>
+        <div>左侧导航栏</div>
+        <aside id="leftside">
+            <nav>
+                <ul>
+                    <li>右边栏</li>
+                    <li><a herf="#">链接1</a></li>
+                    <li><a herf="#">链接2</a></li>
+                    <li><a herf="#">链接3</a></li>
+                    <li><a herf="#">链接4</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </section>
+    <footer>页脚</footer>
+</body>
+</html>

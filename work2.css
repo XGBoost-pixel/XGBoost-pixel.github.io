@@ -1,0 +1,7 @@
+@charset "utf-8";
+.row>div:nth-child(1){background-color: #eff;}
+.row>div:nth-child(2){background-color: #fef;}
+.row>div:nth-child(3){background-color: #ffe;}
+.row>div:nth-child(4){background-color: #dfd;}
+.row>div:nth-child(5){background-color: #eef;}
+img{width: 70%;margin-left:15% ;}
